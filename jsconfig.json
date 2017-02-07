@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "system",
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": [
+        "coverage",
+        "docs",
+        "junit",
+        "node_modules", 
+        "public",
+        "webpack"
+    ]
+}
