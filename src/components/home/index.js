@@ -1,7 +1,7 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from 'react'
 import styles from './styles.scss'
-
-import { Jumbotron, Button } from 'react-bootstrap'
+import Messenger from 'components/messenger'
+import { Jumbotron } from 'react-bootstrap'
 
 export default class Home extends Component {
     constructor(props) {
@@ -12,11 +12,9 @@ export default class Home extends Component {
     render () {
         return (
             <Jumbotron className={styles.flex_center}>
-                <h1>Boilerplate</h1>
-                <Button bsStyle="success" bsSize="large">Get Started</Button>
+                <h1>Rabbit Messenger</h1>
+                <Messenger />
             </Jumbotron>
         )
     }
 }
-
-Home.PropTypes = {}

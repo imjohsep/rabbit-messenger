@@ -36,13 +36,10 @@ compiler.run((err, stats) => {
 	} else {
 		if (argv.stats) {
 			fs.writeFile(
-				`${config.dir_dist('_stats.json')}`, 
+				`${config.utils_paths.dist('_stats.json')}`, 
 				JSON.stringify(jsonStats)
 			)
 		}
 		debug('No errors or warnings encountered')
 	}
-
-	debug('Copying static assets')
-	fs.copySync(config.utils_paths.client('static'), config.utils_paths.dist())
 })

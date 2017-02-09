@@ -8,6 +8,7 @@ This is a super simple example project utilizing React, Redux, and Webpack.
 
 * [Hot Module Replacement](https://webpack.github.io/docs/hot-module-replacement.html): When possible, changes will be patched in to the running application.
 * [Linting](http://eslint.org/): Javascript code will be passed through a configurable linter. Configure it. Love it.
+* [React-Bootstrap](https://react-bootstrap.github.io/components.html): React components build with Bootstrap design.
 * [CSS Modules](https://github.com/css-modules/css-modules): Stylesheets can loaded into Javascript and accessed through Object properties.
 * [SASS](https://github.com/jtangelder/sass-loader): Because CSS is a hack and painful without a preprocessor.
 * [File Loading](https://github.com/webpack/file-loader): Load images, fonts, etc.

@@ -7,6 +7,7 @@
   "repository": "none",
   "scripts": {
     "start": "DEBUG=app* NODE_ENV=development $(npm bin)/babel-node bin/server.js",
+    "start:prod": "npm run clean && DEBUG=app* NODE_ENV=production $(npm bin)/babel-node bin/compile && NODE_ENV=production $(npm bin)/babel-node bin/server.js",
     "clean": "rm -rf dist/*",
     "compile": "npm run clean && DEBUG=app* NODE_ENV=production $(npm bin)/babel-node bin/compile",
     "compile:stats": "npm run compile -- -s",
@@ -140,6 +141,8 @@
     "redux-devtools": "3.3.1",
     "redux-devtools-dock-monitor": "1.1.1",
     "redux-devtools-log-monitor": "1.0.11",
-    "redux-thunk": "2.2.0"
+    "redux-thunk": "2.2.0",
+    "socket.io": "1.7.2",
+    "socket.io-client": "1.7.2"
   }
 }
