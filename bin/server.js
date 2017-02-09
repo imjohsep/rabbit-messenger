@@ -33,12 +33,12 @@ if (config.globals.__DEV__) {
     app.use(history())
 
 } else if (config.globals.NODE_ENV == 'production') {
-    console.info('Starting production server...')
-    //TODO need to point src to dist/vendor files
-    app.use(express.static(path.join(__dirname, '../dist')))
+    console.info('\nStarting production server...')
+
+    app.use(express.static(config.utils_paths.base(config.dir_dist)))
 
     app.get('*', function (req, res) {
-        res.sendFile(path.join(__dirname, '../dist/index.html'))
+        res.sendFile(path.join(config.utils_paths.base(config.dir_dist), 'index.html'))
     })
 }
 
